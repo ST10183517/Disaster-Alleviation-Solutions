@@ -1,22 +1,152 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* General Styles */
 body {
-  margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text for good contrast */
 }
+
+h1, h2 {
+    color: #0056b3; /* Dark blue for main headings */
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Layout and Header */
+header {
+    background-color: #006fbb; /* Primary Foundation Color */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+    header .navbar-brand {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    header .nav-link {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 1.1rem;
+    }
+
+        header .nav-link:hover {
+            color: #cce7ff;
+        }
+
+/* Home Page Banner */
+.home-banner {
+    background-image: url('/images/banner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+    .home-banner h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .home-banner p {
+        font-size: 1.3rem;
+        margin: 20px 0;
+    }
+
+    .home-banner .btn-primary {
+        background-color: #0056b3;
+        border-color: #0056b3;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+/* Cards for the Focus Areas and Appeals */
+.appeal-list, .focus-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.appeal-item, .focus-item {
+    width: 30%;
+    background-color: #e8f4fc; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .appeal-item img, .focus-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .appeal-item p, .focus-item p {
+        padding: 15px;
+        font-size: 1.1rem;
+        color: #006fbb;
+        text-align: center;
+    }
+
+    .appeal-item:hover, .focus-item:hover {
+        transform: translateY(-5px); /* Slight pop-up effect on hover */
+    }
+
+/* Contact Form Styles */
+.contact-section {
+    background-color: #f4f4f9;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+    .contact-section h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-section .form-group {
+        margin-bottom: 20px;
+    }
+
+    .contact-section .btn-primary {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+        .contact-section .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+    footer p {
+        margin: 0;
+    }
